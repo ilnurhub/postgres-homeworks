@@ -9,3 +9,9 @@ CREATE TABLE employees
 	notes text
 );
 
+CREATE TABLE customers
+(
+	customer_id varchar(5) PRIMARY KEY,
+	company_name varchar(100) NOT NULL,
+	contact_name varchar(60) NOT NULL
+);
