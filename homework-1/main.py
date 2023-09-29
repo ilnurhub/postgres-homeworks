@@ -33,4 +33,11 @@ with psycopg2.connect(host='localhost', database='north', user='postgres', passw
                             (employee_data['employee_id'], employee_data['first_name'], employee_data['last_name'],
                              employee_data['title'], employee_data['birth_date'], employee_data['notes']))
 
+        with open(orders_file_path, 'r', encoding='utf-8') as file:
+            data = csv.DictReader(file)
+            for order_data in data:
+                cur.execute("INSERT INTO orders VALUES (%s, %s, %s, %s, %s)",
+                            (order_data['order_id'], order_data['customer_id'], order_data['employee_id'],
+                             order_data['order_date'], order_data['ship_city']))
+
 conn.close()
