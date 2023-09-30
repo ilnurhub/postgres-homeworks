@@ -2,6 +2,7 @@
 import psycopg2
 import os
 import csv
+from config import PSQL_PASSWORD
 
 DIRNAME = 'north_data'
 
@@ -18,7 +19,7 @@ customers_file_path = create_file_path('customers_data.csv')
 employees_file_path = create_file_path('employees_data.csv')
 orders_file_path = create_file_path('orders_data.csv')
 
-with psycopg2.connect(host='localhost', database='north', user='postgres', password='GoldSa1mon!') as conn:
+with psycopg2.connect(host='localhost', database='north', user='postgres', password=PSQL_PASSWORD) as conn:
     with conn.cursor() as cur:
         with open(customers_file_path, 'r', encoding='utf-8') as file:
             data = csv.DictReader(file)
