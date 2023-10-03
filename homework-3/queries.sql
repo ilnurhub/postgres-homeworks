@@ -26,3 +26,9 @@ WHERE NOT EXISTS(SELECT * FROM orders WHERE customers.customer_id = orders.custo
 
 -- 4. уникальные названия продуктов, которых заказано ровно 10 единиц (количество заказанных единиц см в колонке quantity табл order_details)
 -- Этот запрос написать именно с использованием подзапроса.
+SELECT product_name
+FROM products
+WHERE EXISTS(SELECT *
+             FROM order_details
+             WHERE products.product_id = order_details.product_id
+               AND order_details.quantity = 10);
