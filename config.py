@@ -1,3 +1,3 @@
 import os
 
-PSQL_PASSWORD = os.getenv('PSQL_PASSWORD')  # пароль для пользователя PostgreSQL
+PSQL_PASSWORD = os.getenv("PSQL_PASSWORD")  # пароль пользователю PostgreSQL

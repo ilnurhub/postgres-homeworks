@@ -27,7 +27,7 @@ DROP TABLE IF EXISTS region;
 DROP TABLE IF EXISTS employees;
 
 --
--- Name: categories; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: categories; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE categories (
@@ -39,7 +39,7 @@ CREATE TABLE categories (
 
 
 --
--- Name: customers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: customers; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE customers (
@@ -58,7 +58,7 @@ CREATE TABLE customers (
 
 
 --
--- Name: employees; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: employees; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE employees (
@@ -84,7 +84,7 @@ CREATE TABLE employees (
 
 
 --
--- Name: order_details; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: order_details; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE order_details (
@@ -97,7 +97,7 @@ CREATE TABLE order_details (
 
 
 --
--- Name: orders; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: orders; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE orders (
@@ -119,7 +119,7 @@ CREATE TABLE orders (
 
 
 --
--- Name: products; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: products; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE products (
@@ -136,7 +136,7 @@ CREATE TABLE products (
 
 
 --
--- Name: shippers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: shippers; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE shippers (
@@ -3365,7 +3365,7 @@ INSERT INTO shippers VALUES (6, 'DHL', '1-800-225-5345');
 
 
 --
--- Name: pk_categories; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_categories; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY categories
@@ -3373,7 +3373,7 @@ ALTER TABLE ONLY categories
 
 
 --
--- Name: pk_customers; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_customers; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY customers
@@ -3381,7 +3381,7 @@ ALTER TABLE ONLY customers
 
 
 --
--- Name: pk_employees; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_employees; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY employees
@@ -3389,7 +3389,7 @@ ALTER TABLE ONLY employees
 
 
 --
--- Name: pk_order_details; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_order_details; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY order_details
@@ -3397,7 +3397,7 @@ ALTER TABLE ONLY order_details
 
 
 --
--- Name: pk_orders; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_orders; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY orders
@@ -3405,7 +3405,7 @@ ALTER TABLE ONLY orders
 
 
 --
--- Name: pk_products; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_products; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY products
@@ -3413,7 +3413,7 @@ ALTER TABLE ONLY products
 
 
 --
--- Name: pk_shippers; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: pk_shippers; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY shippers
@@ -3475,7 +3475,7 @@ ALTER TABLE ONLY products
 ALTER TABLE ONLY employees
     ADD CONSTRAINT fk_employees_employees FOREIGN KEY (reports_to) REFERENCES employees;
 
-    
+
 --
 -- PostgreSQL database dump complete
 --
